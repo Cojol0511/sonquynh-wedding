@@ -68,6 +68,10 @@
         url(https://app.thiepcuoionline.net/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.15.7#fl-icons) format("svg");
     }
   </style>
+
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
   <link rel="stylesheet" id="flatsome-style-css" href="./assets/css/style.css" type="text/css" media="all">
   <link rel="stylesheet" id="flatsome-googlefonts-css" href="./assets/css/css" type="text/css" media="all">
   <script type="text/javascript" src="./assets/js/jquery.min.js.download" id="jquery-core-js"></script>
@@ -2729,7 +2733,7 @@
           }
 
           #banner-1212962969 .bg.bg-loaded {
-            background-image: url(./assets/image/banner.jpeg);
+            background-image: url(./assets/image/banner.jpg);
           }
 
           #banner-1212962969 .overlay {
@@ -2787,11 +2791,13 @@
 
 
 
-                <h5 style="text-align: center;">HÔN LỄ ĐƯỢC TỔ CHỨC VÀO</h5>
-                <h6 style="text-align: center;">THỨ HAI</h6>
-                <h1 style="text-align: center;"><span style="font-size: 120%;">01 . 05 . 2023</span></h1>
-                <p style="text-align: center;">Vào lúc, 11 giờ</p>
-                <h5 style="text-align: center;">MINH CHÂU PLACE (SẢNH B 122B LÝ THÁI TÔNG, THÀNH PHỐ ĐÀ NẴNG)</h5>
+                <!-- <h5 style="text-align: center;">HÔN LỄ ĐƯỢC TỔ CHỨC VÀO</h5> -->
+                <h6 style="text-align: center;">MONDAY</h6>
+                <h1 style="text-align: center; margin: 25px 0;"><span style="font-size: 120%;">01 . 05 . 2023</span>
+                </h1>
+                <!-- <p style="text-align: center;">Vào lúc, 11 giờ</p> -->
+                <h5 style="text-align: center; width: 80%; margin: auto;">MINH CHAU PLACE, LY THAI TONG STREET, DA NANG,
+                  VIET NAM</h5>
                 <div class="text-center">
                   <div class="is-divider divider clearfix"
                     style="max-width:100px;height:2px;background-color:rgb(0, 0, 0);"></div>
@@ -3002,7 +3008,7 @@
                           }
 
                           #banner-1539984894 .bg.bg-loaded {
-                            background-image: url(./assets/image/story-2.jpeg);
+                            background-image: url(./assets/image/story-1.jpg);
                           }
 
                           #banner-1539984894 .bg {
@@ -3086,7 +3092,7 @@
                           }
 
                           #banner-494526493 .bg.bg-loaded {
-                            background-image: url(./assets/image/story-3.jpeg);
+                            background-image: url(./assets/image/story-2.jpg);
                           }
 
                           #banner-494526493 .bg {
@@ -3182,7 +3188,7 @@
                           }
 
                           #banner-451303286 .bg.bg-loaded {
-                            background-image: url(./assets/image/story-1.jpeg);
+                            background-image: url(./assets/image/story-3.jpg);
                           }
 
                           #banner-451303286 .bg {
@@ -3595,7 +3601,7 @@
                     }
 
                     #banner-881884029 .bg.bg-loaded {
-                      background-image: url(./assets/image/tungson.jpeg);
+                      background-image: url(./assets/image/tungson.jpg);
                     }
 
                     #banner-881884029 .bg {
@@ -3730,14 +3736,13 @@
                   </div>
 
 
-                  <style>
                     #banner-587492833 {
                       padding-top: 120%;
                       background-color: rgba(0, 0, 0, 0);
                     }
 
                     #banner-587492833 .bg.bg-loaded {
-                      background-image: url(./assets/image/nhuquynh.jpeg);
+                      background-image: url(./assets/image/nhuquynh.jpg);
                     }
 
                     #banner-587492833 .bg {
@@ -4464,8 +4469,20 @@
 
 
                 <h2 style="text-align: center;">SAVE THE DATE</h2>
-                <p>Đám cưới sẽ trọn vẹn &amp; ý nghĩa hơn khi có sự hiện diện &amp; chúc phúc của bạn. Hãy xác nhận sự
-                  có mặt của mình để Quỳnh &amp; Sơn chuẩn bị đón tiếp chu đáo nhất nha!</p>
+                <p>Đám cưới sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện và chúc phúc của bạn. Hãy xác nhận sự có mặt
+                  của mình để hai bên gia đình chuẩn bị đón tiếp chu đáo nhất nha!!</p>
+
+                <p class="QRcode_open" style="font-weight: bold; font-style: italic;">
+                  Bạn có thể mừng quà cưới tại đây <i style="color: red;" class="ri-red-packet-fill"></i>
+                </p>
+
+                <div id="QRcode">
+                  <img src="./assets/image/cropped-wedding-ring-270x270.png" alt="">
+                </div>
+
+
+
+
                 <div class="wpcf7 js" id="wpcf7-f8717-p8497-o1" lang="vi" dir="ltr">
                   <div class="screen-reader-response">
                     <p role="status" aria-live="polite" aria-atomic="true"></p>
@@ -4928,8 +4945,14 @@
     AOS.init();
   </script>
 
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-
+  <!-- Include jQuery Popup Overlay -->
+  <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+  <script>
+    $('#QRcode').popup();
+  </script>
 
 </body>
 
