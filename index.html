@@ -4487,9 +4487,27 @@
                   của mình để hai bên gia đình chuẩn bị đón tiếp chu đáo nhất nha!!</p>
 
                 <p class="QRcode_open" style="font-weight: bold; font-style: italic;">
-                  Bạn có thể mừng quà cưới tại đây <i style="font-size: 30px; color: red;"
-                    class="ri-red-packet-fill"></i>
+                  Bạn có thể mừng quà cưới tại đây <i id="redpacket" class="ri-red-packet-fill"></i>
                 </p>
+
+                <style>
+                  #redpacket {
+                    display: inline-block;
+                    font-size: 30px;
+                    color: red;
+                    animation: mover 1s infinite alternate;
+                  }
+
+                  @keyframes mover {
+                    0% {
+                      transform: translateY(-5px);
+                    }
+
+                    100% {
+                      transform: translateY(10px);
+                    }
+                  }
+                </style>
 
                 <div id="QRcode">
                   <img style="width: 250px;" src="./assets/image/QR_CODE_BANKING.jpg" alt="QR_CODE_BANKING">
